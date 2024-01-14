@@ -1,0 +1,4 @@
+source ~/zephyrproject/.venv/bin/activate
+pushd ~/repos/zmk/app
+west build -p -b nice_nano_v2 -- -DSHIELD="beamboard" -DZMK_CONFIG="~/repos/zmk-config/config/"
+popd

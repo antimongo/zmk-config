@@ -1,0 +1,18 @@
+# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_BEAMBOARD
+
+config ZMK_KEYBOARD_NAME
+    default "Beamboard"
+
+config SPI
+    default y
+
+config GPIO
+    default y
+    
+config PINCTRL
+    default y
+
+endif
